@@ -11,6 +11,10 @@ var svg = d3.select("#graph").append("svg")
     .attr("width", "100%").attr("height", "100%")
     .attr("pointer-events", "all");
 
+var tooltip_div = d3.select("#graph").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);;
+
 d3.json("/graph", function(error, graph) {
     if (error) return;
 
@@ -44,5 +48,11 @@ d3.json("/graph", function(error, graph) {
 
     node.on("mouseover", function (d) {
         console.log(d);
+        tooltip_div.transition()
+            .duration(200)
+            .style("opacity", .9);
+        tooltip_div.html(d.title)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 11) + "px");
     })
 });

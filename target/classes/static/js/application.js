@@ -3,7 +3,7 @@
  */
 $(function () {
     function showMovie(title) {
-        $.get("/movies/search/findByTitle?title=" + encodeURIComponent(title), // todo fix paramter in SDN
+        $.get("/movies/search/findByTitle?title=" + encodeURIComponent(title),
             function (data) {
                 if (!data ) return; //  || !data["_embedded"].movies) return;
                 var movie = data; // ["_embedded"].movies[0];

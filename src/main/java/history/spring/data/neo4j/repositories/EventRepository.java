@@ -13,7 +13,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
  * @author Mark Angrish
  */
 @RepositoryRestResource(collectionResourceRel = "movies", path = "movies")
-public interface MovieRepository extends PagingAndSortingRepository<Movie, Long> {
+public interface EventRepository extends PagingAndSortingRepository<Movie, Long> {
 
 	Movie findByTitle(@Param("title") String title);
 

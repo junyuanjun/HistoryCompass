@@ -4,15 +4,16 @@ import java.util.*;
 
 import history.spring.data.neo4j.domain.Movie;
 import history.spring.data.neo4j.domain.Role;
-import history.spring.data.neo4j.repositories.MovieRepository;
+import history.spring.data.neo4j.repositories.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class MovieService {
+public class HistoryService {
 
-	@Autowired MovieRepository movieRepository;
+	@Autowired
+	EventRepository movieRepository;
 
 	private Map<String, Object> toD3Format(Collection<Movie> movies) {
 		List<Map<String, Object>> nodes = new ArrayList<>();

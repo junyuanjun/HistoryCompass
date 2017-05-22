@@ -2,7 +2,7 @@ package history.spring.data.neo4j.controller;
 
 import java.util.Map;
 
-import history.spring.data.neo4j.services.MovieService;
+import history.spring.data.neo4j.services.HistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController("/")
 public class HistoryController {
 
-	final MovieService movieService;
+	final HistoryService movieService;
 
 	@Autowired
-	public HistoryController(MovieService movieService) {
+	public HistoryController(HistoryService movieService) {
 		this.movieService = movieService;
 	}
 
