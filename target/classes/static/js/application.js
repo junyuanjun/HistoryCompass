@@ -82,14 +82,21 @@ $(function () {
     $("#search").submit(search);
     // search();
 
-    function save() {
-        var to_save = $("#add").find("input[name=add]").val();
-        to_save.replace(" ", "+");
-        console.log(to_save)
-        d3.json("/save/" + to_save, function (error, data) {
+    function save(url) {
+        console.log("in save process")
+
+        d3.json(url, function (error, data) {
             if (error) return;
         })
     }
+    
+    $("#addbtn").click(function () {
+        var to_save = $("#add-text").val().replaceAll(" ", "+");
+        var url = "/save/" + to_save;
 
-    $("#add").submit(save())
+        console.log(url)
+        save(url)
+    })
+
+    // $("#add").submit(save())
 })

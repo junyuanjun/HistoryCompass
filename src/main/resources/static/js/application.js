@@ -82,19 +82,20 @@ $(function () {
     $("#search").submit(search);
     // search();
 
-    function save(to_save) {
+    function save(url) {
         console.log("in save process")
 
-        d3.json("/save/" + to_save, function (error, data) {
+        d3.json(url, function (error, data) {
             if (error) return;
         })
     }
     
     $("#addbtn").click(function () {
         var to_save = $("#add-text").val().replaceAll(" ", "+");
+        var url = "/save/" + to_save;
 
-        console.log(to_save)
-        save(to_save)
+        console.log(url)
+        save(url)
     })
 
     // $("#add").submit(save())

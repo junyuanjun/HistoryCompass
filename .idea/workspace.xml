@@ -2,45 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f8c8985-e752-4440-bdc4-6a0f5f472f8b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Person_origin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/BornIn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Continent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/DoneBy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/From.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Gender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/HappenIn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/InContinent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/InCountry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/WorkAs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/img/CompassRose.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/controller/HistoryController.class" afterPath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/controller/HistoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Person.class" afterPath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/repositories/PersonRepository.class" afterPath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/repositories/PersonRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/SampleHistoryApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/controller/HistoryController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/BornIn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/City.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Continent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Country.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Date.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/DoneBy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Event.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/From.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Gender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/HappenIn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/InContinent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/InCountry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Industry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Movie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Occupation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/Role.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/domain/WorkAs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/repositories/EventRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/repositories/MovieRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/repositories/PersonRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/services/HistoryService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/history/spring/data/neo4j/services/MovieService.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/history-compass.iml" afterPath="$PROJECT_DIR$/history-compass.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/controller/HistoryController.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/controller/HistoryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/City.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/City.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Country.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Country.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Date.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Date.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Event.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Industry.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Industry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Occupation.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Occupation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Person.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/EventRepository.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/EventRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/PersonRepository.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/PersonRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/services/HistoryService.java" afterPath="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/services/HistoryService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/application.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/interaction.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/interaction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="$PROJECT_DIR$/target/classes/static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/application.js" afterPath="$PROJECT_DIR$/target/classes/static/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/interaction.js" afterPath="$PROJECT_DIR$/target/classes/static/js/interaction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="history-compass.iws" />
@@ -73,6 +66,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SampleHistoryApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/SampleHistoryApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BornIn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/BornIn.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,8 +104,8 @@
       <file leaf-file-name="HistoryController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/controller/HistoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            <state relative-caret-position="522">
+              <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -155,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/MovieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/PersonRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/services/HistoryService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/EventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/BornIn.java" />
@@ -172,9 +177,10 @@
         <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/DoneBy.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Occupation.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/interaction.js" />
-        <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/controller/HistoryController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/application.js" />
+        <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/controller/HistoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/services/HistoryService.java" />
       </list>
     </option>
   </component>
@@ -1187,12 +1193,12 @@
       <workItem from="1494066877217" duration="5980000" />
       <workItem from="1494473594987" duration="366000" />
       <workItem from="1495352768441" duration="19316000" />
-      <workItem from="1496286428583" duration="23886000" />
+      <workItem from="1496286428583" duration="24272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49548000" />
+    <option name="totallyTimeSpent" value="49934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1462,17 +1468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/SampleHistoryApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/MovieRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1494,17 +1489,6 @@
         <state relative-caret-position="435">
           <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/services/HistoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-          <folding>
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1631,14 +1615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/PersonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/domain/Occupation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1673,14 +1649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/controller/HistoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/interaction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -1699,9 +1667,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+        <state relative-caret-position="522">
+          <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/controller/HistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/services/HistoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#2101#2102#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/repositories/PersonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/history/spring/data/neo4j/SampleHistoryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

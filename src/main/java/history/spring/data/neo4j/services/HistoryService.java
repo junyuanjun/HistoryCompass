@@ -4,7 +4,6 @@ import java.util.*;
 
 import history.spring.data.neo4j.domain.*;
 import history.spring.data.neo4j.repositories.EventRepository;
-import history.spring.data.neo4j.repositories.MovieRepository;
 import history.spring.data.neo4j.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

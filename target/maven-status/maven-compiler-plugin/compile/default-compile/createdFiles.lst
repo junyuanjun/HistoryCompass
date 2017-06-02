@@ -7,9 +7,6 @@ history/spring/data/neo4j/SampleHistoryApplication.class
 history/spring/data/neo4j/repositories/PersonRepository.class
 history/spring/data/neo4j/domain/Occupation.class
 history/spring/data/neo4j/domain/Continent.class
-history/spring/data/neo4j/repositories/MovieRepository.class
-history/spring/data/neo4j/services/MovieService.class
-history/spring/data/neo4j/domain/Movie.class
 history/spring/data/neo4j/controller/HistoryController.class
 history/spring/data/neo4j/domain/City.class
 history/spring/data/neo4j/domain/DoneBy.class
@@ -22,4 +19,3 @@ history/spring/data/neo4j/domain/Country.class
 history/spring/data/neo4j/domain/From.class
 history/spring/data/neo4j/repositories/EventRepository.class
 history/spring/data/neo4j/domain/Event.class
-history/spring/data/neo4j/domain/Role.class

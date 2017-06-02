@@ -7,7 +7,6 @@ import history.spring.data.neo4j.domain.*;
 import history.spring.data.neo4j.repositories.EventRepository;
 import history.spring.data.neo4j.repositories.PersonRepository;
 import history.spring.data.neo4j.services.HistoryService;
-import history.spring.data.neo4j.services.MovieService;
 import org.neo4j.driver.internal.value.IntegerValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
