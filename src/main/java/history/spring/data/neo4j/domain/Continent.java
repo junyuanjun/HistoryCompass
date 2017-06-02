@@ -6,22 +6,35 @@ import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 
-import java.util.LinkedList;
-import java.util.List;
 
 /**
- * @author junyuan
+ * @author Jun Yuan
  */
 @JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
 @NodeEntity
-public class Industry {
+public class Continent {
     @GraphId
     private Long id;
 
-    private String name;
+    public String name;
 
-    @Relationship(type = "Work_With", direction = Relationship.INCOMING)
-    private List<Person> persons = new LinkedList<>();
+    @Relationship(type = "In_Continent", direction = Relationship.INCOMING)
+    public Country country = new Country();
+
+    public Continent(String name) {
+        this.name = name;
+    }
+
+    public Continent() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -31,11 +44,11 @@ public class Industry {
         this.name = name;
     }
 
-    public List<Person> getPersons() {
-        return persons;
+    public Country getCountry() {
+        return country;
     }
 
-    public void setPersons(List<Person> persons) {
-        this.persons = persons;
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }

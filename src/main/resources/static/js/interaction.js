@@ -2,10 +2,10 @@
  * Created by junyuan on 06/05/2017.
  */
 
-var width = 800, height = 800;
+var width = 800, height = 200;
 
 var force = d3.layout.force()
-    .charge(-200).linkDistance(30).size([width, height]);
+    .charge(-50).linkDistance(30).size([width, height]);
 
 var svg = d3.select("#graph").append("svg")
     .attr("width", "100%").attr("height", "100%")
@@ -13,7 +13,7 @@ var svg = d3.select("#graph").append("svg")
 
 var tooltip_div = d3.select("#graph").append("div")
     .attr("class", "tooltip")
-    .style("opacity", 0);;
+    .style("opacity", 0);
 
 d3.json("/graph", function(error, graph) {
     if (error) return;
@@ -40,12 +40,12 @@ d3.json("/graph", function(error, graph) {
 
     // force feed algo ticks
     force.on("tick", function() {
-        link.attr("x1", function(d) { return d.source.x; })
+        link.attr("x1", function(d) { return d.source.x - 100; })
             .attr("y1", function(d) { return d.source.y; })
-            .attr("x2", function(d) { return d.target.x; })
+            .attr("x2", function(d) { return d.target.x - 100; })
             .attr("y2", function(d) { return d.target.y; });
 
-        node.attr("cx", function(d) { return d.x; })
+        node.attr("cx", function(d) { return d.x - 100; })
             .attr("cy", function(d) { return d.y; });
     });
 
@@ -58,3 +58,14 @@ d3.json("/graph", function(error, graph) {
             .style("top", (d3.event.pageY - 11) + "px");
     })
 });
+
+var tagbtn = d3.selectAll(".add-tag"),
+    add_input = $("#add-text");
+
+
+tagbtn.on("click", function (d) {
+    console.log(this);
+    var original = add_input.val();
+    console.log(original)
+    add_input.val(original + " " + this.innerHTML + " ");
+})

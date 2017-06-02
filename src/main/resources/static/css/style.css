@@ -1,4 +1,43 @@
 .node { stroke: #222; stroke-width: 1.5px; }
-.node.actor { fill: #888; }
-.node.movie { fill: #BBB; }
+.node.actor { fill: rgb(21, 141, 191); }
+.node.movie { fill: rgb(102, 178, 69); }
 .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; }
+
+.tagbtn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    margin: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.person{
+    border-right: 1px solid #072;
+    border-bottom: 1px solid #072;
+    background-color: rgb(102, 178, 69);
+}
+
+.event{
+    border-right: 1px solid rgb(20, 88, 161);
+    border-bottom: 1px solid rgb(20, 88, 161);
+    background-color: rgb(21, 141, 191);
+}
+
+.search-form input{
+    width: 600px;
+}
+
+.add-form input{
+    width: 500px;
+}
+
+.graph-row {
+    height: 300px;
+}
+
+#graph {
+    margin-top: 50px;
+}
