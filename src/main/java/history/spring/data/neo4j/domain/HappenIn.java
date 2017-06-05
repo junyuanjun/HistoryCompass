@@ -27,4 +27,12 @@ public class HappenIn {
         this.event = event;
         this.date = date;
     }
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public Date getDate() {
+        return date;
+    }
 }

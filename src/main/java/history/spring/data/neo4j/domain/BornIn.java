@@ -2,11 +2,15 @@ package history.spring.data.neo4j.domain;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.fasterxml.jackson.databind.deser.std.CollectionDeserializer;
+import com.sun.org.apache.xpath.internal.operations.String;
 import org.neo4j.ogm.annotation.EndNode;
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
+import java.util.ArrayList;
+import java.util.Collection;
 
 
 /**
@@ -27,6 +31,10 @@ public class BornIn {
     public BornIn(Person person, Date date) {
         this.person = person;
         this.date = date;
+    }
+
+    public BornIn() {
+
     }
 
     public Person getPerson() {

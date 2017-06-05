@@ -21,13 +21,10 @@ public class Date {
     public int year;
 
     @Relationship(type = "Born_In", direction = Relationship.INCOMING)
-    private List<Person> persons = new LinkedList<>();
+    private List<BornIn> bornIn = new LinkedList<>();
 
     @Relationship(type = "Happen_In", direction = Relationship.INCOMING)
-    private List<Event> start_events = new LinkedList<>();
-
-    @Relationship(type = "Last_To", direction = Relationship.INCOMING)
-    private List<Event> end_events = new LinkedList<>();
+    private List<HappenIn> start_events = new LinkedList<>();
 
     public Date(int year) {
         this.year = year;
@@ -38,33 +35,5 @@ public class Date {
 
     public int getYear() {
         return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public List<Person> getPersons() {
-        return persons;
-    }
-
-    public void setPersons(List<Person> persons) {
-        this.persons = persons;
-    }
-
-    public List<Event> getStart_events() {
-        return start_events;
-    }
-
-    public void setStart_events(List<Event> start_events) {
-        this.start_events = start_events;
-    }
-
-    public List<Event> getEnd_events() {
-        return end_events;
-    }
-
-    public void setEnd_events(List<Event> end_events) {
-        this.end_events = end_events;
     }
 }

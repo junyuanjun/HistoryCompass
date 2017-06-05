@@ -18,7 +18,7 @@ public class Country {
     public String name;
 
     @Relationship(type = "In_Country", direction = Relationship.INCOMING)
-    public City city = new City();
+    public InCountry inCountry = new InCountry();
 
     @Relationship(type = "In_Continent")
     public Continent continent = new Continent();
@@ -30,35 +30,15 @@ public class Country {
     public Country() {
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public City getCity() {
-        return city;
-    }
-
-    public void setCity(City city) {
-        this.city = city;
+    public InCountry getInCountry() {
+        return inCountry;
     }
 
     public Continent getContinent() {
         return continent;
-    }
-
-    public void setContinent(Continent continent) {
-        this.continent = continent;
     }
 }

@@ -20,15 +20,15 @@ public class Person {
 		@GraphId
 		private Long id;
 
-		private String name;
+		public String name;
 
-		public Gender gender;
+		public String gender;
 
 //	@Relationship(type = "ACTED_IN")
 //	private List<Movie> movies = new ArrayList<>();
 
-		@Relationship(type = "Participate_In")
-		private List<Event> events = new LinkedList<>();
+		@Relationship(type = "Done_By", direction = Relationship.INCOMING)
+		private List<DoneBy> doneByList = new LinkedList<>();
 
 		@Relationship(type = "From_City")
 		private City city = new City();
@@ -63,56 +63,32 @@ public class Person {
 		this.name = name;
 	}
 
-	public Long getId() {
-		return id;
-	}
-
 	public String getName() {
 		return name;
-	}
-
-	public List<Event> getEvents() {
-		return events;
-	}
-
-	public City getCity() {
-		return city;
-	}
-
-	public void setCity(City city) {
-		this.city = city;
 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public Gender getGender() {
-		return gender;
+	public List<DoneBy> getDoneByList() {
+		return doneByList;
 	}
 
-	public void setGender(Gender gender) {
-		this.gender = gender;
+	public void setDoneByList(List<DoneBy> doneByList) {
+		this.doneByList = doneByList;
 	}
 
-	public void setEvents(List<Event> events) {
-		this.events = events;
+	public City getCity() {
+		return city;
 	}
 
 	public Industry getIndustry() {
 		return industry;
 	}
 
-	public void setIndustry(Industry industry) {
-		this.industry = industry;
-	}
-
 	public Occupation getOccupation() {
 		return occupation;
-	}
-
-	public void setOccupation(Occupation occupation) {
-		this.occupation = occupation;
 	}
 
 	//	public List<Movie> getMovies() {

@@ -91,7 +91,13 @@ $(function () {
     }
     
     $("#addbtn").click(function () {
-        var to_save = $("#add-text").val().replaceAll(" ", "+");
+        var to_save = $("#add-text").val();
+        while (to_save.charAt(0) == ' ') {
+            to_save = to_save.substr(1);
+        }
+        while (to_save.indexOf(' ') > 0) {
+            to_save = to_save.replace(' ', '+');
+        }
         var url = "/save/" + to_save;
 
         console.log(url)

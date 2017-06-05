@@ -14,7 +14,6 @@ history/spring/data/neo4j/services/HistoryService.class
 history/spring/data/neo4j/domain/Person.class
 history/spring/data/neo4j/domain/BornIn.class
 history/spring/data/neo4j/domain/InCountry.class
-history/spring/data/neo4j/domain/Gender.class
 history/spring/data/neo4j/domain/Country.class
 history/spring/data/neo4j/domain/From.class
 history/spring/data/neo4j/repositories/EventRepository.class

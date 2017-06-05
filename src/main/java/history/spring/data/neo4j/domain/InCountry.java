@@ -27,4 +27,15 @@ public class InCountry {
         this.city = city;
         this.country = country;
     }
+
+    public InCountry() {
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
 }

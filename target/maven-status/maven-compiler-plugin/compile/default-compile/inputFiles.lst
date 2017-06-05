@@ -2,7 +2,6 @@
 /Users/junyuan/Documents/_/github/HistoryCompass/src/main/java/history/spring/data/neo4j/services/HistoryService.java
 /Users/junyuan/Documents/_/github/HistoryCompass/src/main/java/history/spring/data/neo4j/repositories/EventRepository.java
 /Users/junyuan/Documents/_/github/HistoryCompass/src/main/java/history/spring/data/neo4j/domain/Occupation.java
-/Users/junyuan/Documents/_/github/HistoryCompass/src/main/java/history/spring/data/neo4j/domain/Gender.java
 /Users/junyuan/Documents/_/github/HistoryCompass/src/main/java/history/spring/data/neo4j/domain/Continent.java
 /Users/junyuan/Documents/_/github/HistoryCompass/src/main/java/history/spring/data/neo4j/domain/InCountry.java
 /Users/junyuan/Documents/_/github/HistoryCompass/src/main/java/history/spring/data/neo4j/SampleHistoryApplication.java

@@ -19,7 +19,7 @@ public class Continent {
     public String name;
 
     @Relationship(type = "In_Continent", direction = Relationship.INCOMING)
-    public Country country = new Country();
+    public InContinent inContinent = new InContinent();
 
     public Continent(String name) {
         this.name = name;
@@ -28,27 +28,11 @@ public class Continent {
     public Continent() {
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Country getCountry() {
-        return country;
-    }
-
-    public void setCountry(Country country) {
-        this.country = country;
+    public InContinent getInContinent() {
+        return inContinent;
     }
 }

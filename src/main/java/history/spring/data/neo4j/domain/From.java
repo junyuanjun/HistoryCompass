@@ -27,4 +27,12 @@ public class From {
         this.person = person;
         this.city = city;
     }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public City getCity() {
+        return city;
+    }
 }

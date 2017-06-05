@@ -27,4 +27,15 @@ public class InContinent {
         this.country = country;
         this.continent = continent;
     }
+
+    public InContinent() {
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public Continent getContinent() {
+        return continent;
+    }
 }

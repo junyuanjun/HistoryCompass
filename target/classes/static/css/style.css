@@ -1,6 +1,6 @@
 .node { stroke: #222; stroke-width: 1.5px; }
-.node.actor { fill: rgb(21, 141, 191); }
-.node.movie { fill: rgb(102, 178, 69); }
+.node.person { fill: rgb(104, 189, 246); }
+.node.event { fill: rgb(251, 145, 179); }
 .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; }
 
 .tagbtn {

@@ -21,7 +21,7 @@ public class Event {
 
     public String name;
 
-    @Relationship(type = "Participate_In", direction = Relationship.INCOMING)
+    @Relationship(type = "Done_By")
     private List<Person> persons = new LinkedList<>();
 
     @Relationship(type = "In_City")
@@ -30,11 +30,11 @@ public class Event {
     @Relationship(type = "Happen_In")
     public Date happen_date = new Date();
 
-    @Relationship(type = "Last_To")
-    public Date end_date = new Date();
-
     public Event(String name) {
         this.name = name;
+    }
+
+    public Event() {
     }
 
     public String getName() {
@@ -69,11 +69,4 @@ public class Event {
         this.happen_date = happen_date;
     }
 
-    public Date getEnd_date() {
-        return end_date;
-    }
-
-    public void setEnd_date(Date end_date) {
-        this.end_date = end_date;
-    }
 }

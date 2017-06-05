@@ -22,13 +22,13 @@ public class City {
     public String name;
 
     @Relationship(type = "From", direction = Relationship.INCOMING)
-    public List<Person> persons = new LinkedList<>();
+    public List<From> froms = new LinkedList<>();
 
     @Relationship(type = "In_Country")
     public Country country = new Country();
 
     @Relationship(type = "In_City", direction = Relationship.INCOMING)
-    private List<Event> events = new LinkedList<>();
+    private List<HappenIn> happenIns = new LinkedList<>();
 
     public City(String name) {
         this.name = name;
@@ -37,43 +37,15 @@ public class City {
     public City() {
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Person> getPersons() {
-        return persons;
-    }
-
-    public void setPersons(List<Person> persons) {
-        this.persons = persons;
+    public List<From> getFroms() {
+        return froms;
     }
 
     public Country getCountry() {
         return country;
-    }
-
-    public void setCountry(Country country) {
-        this.country = country;
-    }
-
-    public List<Event> getEvents() {
-        return events;
-    }
-
-    public void setEvents(List<Event> events) {
-        this.events = events;
     }
 }

@@ -15,34 +15,48 @@ import java.util.Collection;
 //@Repository
 @RepositoryRestResource(collectionResourceRel = "history", path = "history")
 public interface PersonRepository extends PagingAndSortingRepository<Person, Long> {
-//    @Query("MATCH (e:Event)-[r:DoneBy]->(p:Person) RETURN e,r,p LIMIT {limit}")
-//    Collection<Person> graph(@Param("limit") int limit);
+    /*Add Operation*/
+    @Query("MERGE (a:Person { name: {personName}, gender: {personGender} })")
+    void savePerson(@Param("personName")String personName, @Param("personGender")String personGender);
 
-    @Query("MERGE (a:Person { name: name, gender: gender }")
-    void savePerson(@Param("name")String name, @Param("gender")String gender);
-
-    @Query("MERGE (a:Person { name: workAs.person.name }\n" +
-            "MERGE (b:Occupation { name: workAs.occupation.name })\n" +
+    @Query("MERGE (a:Person { name: {personName} })\n" +
+            "MERGE (b:Occupation { name: {occupation} })\n" +
             "MERGE (a)-[:Work_As]->(b)")
-    void savePersonWorkAs(@Param("workAs")WorkAs workAs);
+    void savePersonWorkAs(@Param("personName")String personName, @Param("occupation")String occupation);
 
-    @Query("MERGE (a:Person { name: bornIn.person.name }\n" +
-            "MERGE (b:Date { year: bornIn.date.year })\n" +
+    @Query("MERGE (a:Person { name: {personName} })\n" +
+            "MERGE (b:Date { year: {year} })\n" +
             "MERGE (a)-[:Born_In]->(b)")
-    void savePersonBornIn(@Param("bornIn")BornIn bornIn);
+    void savePersonBornIn(@Param("personName")String personName, @Param("year")int year);
 
-    @Query("MERGE (a:Person { name: from.person.name }\n" +
-            "MERGE (b:City { name: from.city.name })\n" +
+    @Query("MERGE (a:Person { name: {personName} })\n" +
+            "MERGE (b:City { name: {cityName} })\n" +
             "MERGE (a)-[:From]->(b)")
-    void savePersonFromCity(@Param("from")From from);
+    void savePersonFromCity(@Param("personName")String personName, @Param("cityName")String cityName);
 
-    @Query("MERGE (a:City { name: inCountry.city.name }\n" +
-            "MERGE (b:Country { name: inCountry.country.name })\n" +
+    @Query("MERGE (a:City { name: {cityName} })\n" +
+            "MERGE (b:Country { name: {countryName} })\n" +
             "MERGE (a)-[:In_Country]->(b)")
-    void saveCityInCountry(@Param("inCountry")InCountry inCountry);
+    void saveCityInCountry(@Param("cityName")String cityName, @Param("countryName")String countryName);
 
-    @Query("MERGE (a:Country { name: inContinent.country.name }\n" +
-            "MERGE (b:Continent { name: inContinent.continent.name })\n" +
+    @Query("MERGE (a:Country { name: {countryName} })\n" +
+            "MERGE (b:Continent { name: {continentName} })\n" +
             "MERGE (a)-[:In_Continent]->(b)")
-    void saveCountryInContinent(@Param("inContinent")InContinent inContinent);
+    void saveCountryInContinent(@Param("countryName")String countryName, @Param("continentName")String continentName);
+
+    /*Search Operation*/
+    @Query("MATCH (e:Event)-[r:Done_By]->(p:Person) RETURN e,r,p LIMIT {limit}")
+    Collection<Person> graph(@Param("limit") int limit);
+
+    /*Search Operation*/
+    @Query("MATCH (p:Person{name: {name}})-[r]->(a) RETURN p,r,a")
+    Collection<Person> findByName(@Param("name")String name);
+
+    @Query("MATCH (p:Person)-[r]->(a)\n" +
+            "WHERE p.name CONTAINS {name}\n" +
+            "RETURN p,r,a")
+    Collection<Person> findByNameLike(@Param("name")String name);
+
+    @Query("{query}")
+    Collection<Person> findByQuery(@Param("query")String query);
 }

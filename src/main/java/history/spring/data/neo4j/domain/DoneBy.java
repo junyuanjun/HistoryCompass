@@ -28,6 +28,10 @@ public class DoneBy {
         this.person = person;
     }
 
+    public DoneBy() {
+
+    }
+
     public Event getEvent() {
         return event;
     }

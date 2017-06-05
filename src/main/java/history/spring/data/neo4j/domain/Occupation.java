@@ -21,7 +21,7 @@ public class Occupation {
     private String name;
 
     @Relationship(type = "Work_As", direction = Relationship.INCOMING)
-    private List<Person> persons = new LinkedList<>();
+    private List<WorkAs> workAses = new LinkedList<>();
 
     public Occupation(String name) {
         this.name = name;
@@ -34,15 +34,7 @@ public class Occupation {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Person> getPersons() {
-        return persons;
-    }
-
-    public void setPersons(List<Person> persons) {
-        this.persons = persons;
+    public List<WorkAs> getWorkAses() {
+        return workAses;
     }
 }

@@ -60,6 +60,8 @@ d3.json("/graph", function(error, graph) {
 });
 
 var tagbtn = d3.selectAll(".add-tag"),
+    tagbtn0 = d3.selectAll(".search-tag"),
+    search_input = $("#search-text"),
     add_input = $("#add-text");
 
 
@@ -68,4 +70,12 @@ tagbtn.on("click", function (d) {
     var original = add_input.val();
     console.log(original)
     add_input.val(original + " " + this.innerHTML + " ");
-})
+});
+
+tagbtn0.on("click", function (d) {
+    console.log(this);
+    var original = search_input.val();
+    console.log(original)
+    search_input.val(original + " " + this.innerHTML + " ");
+});
+

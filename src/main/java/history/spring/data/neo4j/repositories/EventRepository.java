@@ -13,26 +13,26 @@ import java.util.Collection;
  */
 @RepositoryRestResource(collectionResourceRel = "history", path = "history")
 public interface EventRepository extends PagingAndSortingRepository<Event, Long> {
-    @Query("MATCH (e:Event)-[r:DoneBy]->(p:Person) RETURN e,r,p LIMIT {limit}")
-    Collection<Event> graph(@Param("limit") int limit);
-
-    @Query("MERGE (a:Event { name: doneBy.event.name }\n" +
-        "MERGE (b:Person { name: doneBy.person.name })\n" +
+    /*Save Operation*/
+    @Query("MERGE (a:Event { name: {eventName} })\n" +
+        "MERGE (b:Person { name: {personName} })\n" +
         "MERGE (a)-[:Done_By]->(b)")
-    void saveEventDoneBy(@Param("doneBy")DoneBy doneBy);
+    void saveEventDoneBy(@Param("eventName")String eventName, @Param("personName")String personName);
 
-    @Query("MERGE (a:City { name: inCountry.city.name }\n" +
-            "MERGE (b:Country { name: inCountry.country.name })\n" +
-            "MERGE (a)-[:In_Country]->(b)")
-    void saveCityInCountry(@Param("inCountry")InCountry inCountry);
-
-    @Query("MERGE (a:Country { name: inContinent.country.name }\n" +
-            "MERGE (b:Continent { name: inContinent.continent.name })\n" +
-            "MERGE (a)-[:In_Continent]->(b)")
-    void saveCountryInContinent(@Param("inContinent")InContinent inContinent);
-
-    @Query("MERGE (a:Event { name: happenIn.event.name }\n" +
-            "MERGE (b:Date { name: happenIn.date.name })\n" +
+    @Query("MERGE (a:Event { name: {eventName} }\n" +
+            "MERGE (b:Date { year: {year} })\n" +
             "MERGE (a)-[:Happen_In]->(b)")
-    void saveEventHappenIn(@Param("happenIn")HappenIn happenIn);
+    void saveEventHappenIn(@Param("eventName")String eventName, @Param("year")int year);
+
+    /*Search Operation*/
+    @Query("MATCH (e:Event{name: {name}})-[r]->(a) RETURN e,r,a")
+    Collection<Event> findByName(@Param("name")String name);
+
+    @Query("MATCH (e:Event)-[r]->(a)\n" +
+            "WHERE e.name CONTAINS {name}\n" +
+            "RETURN e,r,a")
+    Collection<Event> findByNameLike(@Param("name")String name);
+
+    @Query("{query}")
+    Collection<Event> findByQuery(@Param("query")String query);
 }
